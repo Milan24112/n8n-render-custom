@@ -1,0 +1,6 @@
+﻿const n8n = require('n8n');
+
+
+n8n.start().then(app => {
+  app.set('trust proxy', true);
+});

@@ -1,0 +1,7 @@
+﻿FROM n8nio/n8n
+
+
+COPY enable-trust-proxy.js /patch/enable-trust-proxy.js
+
+
+ENTRYPOINT ["node", "/patch/enable-trust-proxy.js"]
